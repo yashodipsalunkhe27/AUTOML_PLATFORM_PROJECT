@@ -79,7 +79,7 @@ function Analysis() {
 
   return (
     <Layout>
-      <div className="page">
+      <div className="page analysis">
 
         <div className="page-header">
 

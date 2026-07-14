@@ -1,7 +1,8 @@
-.page {
-    width: 100%;
-    max-width: 1500px;
-    margin: 0;
+.page{
+    width:100%;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 .page-header{
