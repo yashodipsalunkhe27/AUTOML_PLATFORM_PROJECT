@@ -1,0 +1,245 @@
+/* ===========================
+   Page Container (shared)
+=========================== */
+
+.page {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.upload-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.page::before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(90deg, #2563eb, #7c3aed, #0d9488);
+    border-radius: 4px;
+    margin-bottom: 28px;
+    margin-top: 4px;
+    order: -1;
+}
+
+.upload-subtitle {
+    font-size: 16px;
+    color: #6b7280;
+    margin: 0 0 35px;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+/* ===========================
+   Upload Box
+=========================== */
+
+.upload-box {
+    border: 2px dashed #c7d2fe;
+    padding: 60px 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.upload-box:hover {
+    border-color: #2563eb;
+    background: #f8fbff;
+    box-shadow: 0 10px 28px rgba(37, 99, 235, 0.12);
+}
+
+.upload-icon {
+    font-size: 64px;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.upload-box h2 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.upload-box p {
+    color: #9ca3af;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 14px 0;
+}
+
+.choose-btn {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 14px 34px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background 0.25s ease, transform 0.2s ease;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+}
+
+.choose-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   File Card
+=========================== */
+
+.file-card {
+    padding: 24px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.file-row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.csv-icon {
+    font-size: 40px;
+    color: #16a34a;
+    background: rgba(22, 163, 74, 0.1);
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.file-row h3 {
+    margin: 0 0 4px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.file-row p {
+    color: #1f2937;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.file-size {
+    text-align: right;
+}
+
+.file-size strong {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+
+.file-size p {
+    color: #1f2937;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* ===========================
+   Upload Button
+=========================== */
+
+.upload-btn {
+    width: 100%;
+    margin-top: 4px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #fff;
+    border: none;
+    padding: 18px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.28);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.upload-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(37, 99, 235, 0.35);
+}
+
+.upload-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ===========================
+   Status Card
+=========================== */
+
+.status-card h3 {
+    margin: 0 0 14px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.status-card p {
+    color: #111827;
+    font-weight: 500;
+    margin: 6px 0;
+    font-size: 16px;
+}
+
+.status-card p strong {
+    color: #6b7280;
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+
+    .upload-title {
+        font-size: 26px;
+    }
+
+    .upload-box {
+        padding: 40px 20px;
+    }
+
+    .file-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .file-size {
+        text-align: center;
+    }
+
+}

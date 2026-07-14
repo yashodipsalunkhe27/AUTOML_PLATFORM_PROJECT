@@ -1,0 +1,31 @@
+.page {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0;
+}
+
+.page-header{
+    margin-bottom:32px;
+}
+
+.page-title{
+    font-size:36px;
+    font-weight:700;
+    color:#1e293b;
+    margin:0 0 8px;
+}
+
+.page-subtitle{
+    color:#64748b;
+    font-size:16px;
+    margin:0;
+}
+
+.page-card{
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 6px 18px rgba(15,23,42,.08);
+    border:1px solid #edf2f7;
+    margin-bottom:28px;
+}

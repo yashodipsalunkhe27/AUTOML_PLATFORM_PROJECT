@@ -1,0 +1,435 @@
+/* ===========================
+   Dashboard Container
+=========================== */
+
+.dashboard {
+    width: 100%;
+    background:
+        radial-gradient(circle at 15% 10%, rgba(37, 99, 235, 0.14) 0%, transparent 45%),
+        radial-gradient(circle at 85% 5%, rgba(124, 58, 237, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 50% 100%, rgba(13, 148, 136, 0.10) 0%, transparent 55%),
+        #eef2f9;
+
+    padding: 20px;
+
+    margin: 0;
+
+    border-radius: 0;
+
+    min-height: calc(100vh - 70px);
+
+    box-sizing: border-box;
+}
+/* ===========================
+   Header
+=========================== */
+
+.dashboard-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard::before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(90deg, #2563eb, #7c3aed, #0d9488);
+    border-radius: 4px;
+    margin-bottom: 28px;
+    margin-top: 4px;
+}
+
+
+.dashboard-subtitle {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 40px;
+    max-width: 750px;
+    line-height: 1.6;
+}
+
+.dashboard-summary{
+
+    margin:30px 0;
+
+    background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
+
+    border-radius:18px;
+
+    padding:30px;
+
+    border: 1px solid #eef1f5;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 6px 20px rgba(15, 23, 42, 0.06);
+
+}
+
+.summary-left h2{
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+    font-size:28px;
+
+}
+
+.summary-left p{
+
+    color:#6b7280;
+
+    font-size:16px;
+
+    max-width:650px;
+
+    line-height:1.6;
+
+}
+
+.status-badge{
+
+    background:#16a34a;
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+    font-size:16px;
+
+}
+
+/* ===========================
+   Cards Grid
+=========================== */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* ===========================
+   Individual Card
+=========================== */
+
+.dashboard-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px;
+    border: 1px solid #eef1f5;
+    border-top: 4px solid #2563eb;
+
+    height: 220px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+
+    transition:
+        transform .30s ease,
+        box-shadow .30s ease;
+}
+
+.dashboard-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 35px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   Icons
+=========================== */
+
+.card-icon {
+
+    font-size: 40px;
+
+    color: #2563eb;
+
+    margin-bottom: 18px;
+
+}
+
+.status-icon{
+
+    color:#16a34a;
+
+}
+
+/* Distinct accent per card type */
+.dashboard-card:nth-child(5) {
+    border-top-color: #16a34a; /* Accuracy card - green accent */
+}
+
+.dashboard-card:nth-child(6) {
+    border-top-color: #16a34a; /* Status card - green accent */
+}
+
+/* ===========================
+   Card Text
+=========================== */
+
+.card-title{
+
+    font-size:17px;
+
+    color:#6b7280;
+
+    font-weight:500;
+
+    margin-bottom:15px;
+
+}
+
+.card-value{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:#2563eb;
+
+    line-height:1.25;
+
+    overflow-wrap: break-word;
+
+}
+
+/* Best Model */
+
+.small-text{
+
+    font-size:23px;
+
+    line-height:1.45;
+
+    max-width:180px;
+
+    text-align:center;
+
+}
+
+/* Status */
+
+.status-trained{
+
+    color:#16a34a;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:992px){
+
+    .card-container{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .dashboard{
+        width:100%;
+
+        background:
+            radial-gradient(circle at 15% 10%, rgba(37,99,235,.14) 0%, transparent 45%),
+            radial-gradient(circle at 85% 5%, rgba(124,58,237,.12) 0%, transparent 45%),
+            radial-gradient(circle at 50% 100%, rgba(13,148,136,.10) 0%, transparent 55%),
+            #eef2f9;
+
+        padding:30px;
+
+        min-height:calc(100vh - 70px);
+
+        box-sizing:border-box;
+    }
+
+    .dashboard-title{
+
+        font-size:42px;
+
+        font-weight:700;
+
+    }
+
+    .dashboard-subtitle{
+
+        font-size:16px;
+
+        margin-bottom:30px;
+
+    }
+
+    .card-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .dashboard-card{
+
+        height:190px;
+
+    }
+
+    .card-icon{
+
+        font-size:34px;
+
+    }
+
+    .card-title{
+
+        font-size:16px;
+
+    }
+
+    .card-value{
+
+        font-size:28px;
+
+    }
+
+    .small-text{
+
+        font-size:20px;
+
+        max-width:220px;
+
+    }
+
+}
+
+
+.chart-card .recharts-wrapper {
+    background: #fbfcfe;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+
+
+/* ===========================
+   Chart Card
+=========================== */
+
+.chart-card{
+
+    background:#ffffff;
+
+    margin-top:40px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.chart-title{
+    font-size:24px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:24px;
+    text-align:left;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #eef2f7;
+}
+
+/* ===========================
+   Charts Grid
+=========================== */
+
+.charts-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+    margin-top:30px;
+
+}
+
+@media(max-width:1200px){
+
+    .charts-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* Emphasize accuracy card */
+.dashboard-card:nth-child(5) .card-value {
+    font-size: 40px;
+    color: #16a34a;
+}
+
+.card-subtext {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-top: 6px;
+}
+
+/* ---------- No Model State ---------- */
+
+.no-model-card {
+    margin-top: 20px;
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 18px;
+    padding: 50px 30px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+}
+
+.no-model-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.no-model-card h2 {
+    color: #92400e;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.no-model-card p {
+    color: #a16207;
+    font-size: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}

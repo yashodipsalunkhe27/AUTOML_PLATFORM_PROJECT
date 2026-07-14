@@ -1,0 +1,225 @@
+.reports {
+    background: #f4f7fb;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.reports-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.reports-subtitle {
+    font-size: 17px;
+    color: #6b7280;
+    margin-bottom: 35px;
+}
+
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 25px;
+}
+
+.report-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.report-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+}
+
+.report-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    font-size: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+.report-card h2 {
+    color: #1f2937;
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+/* ---------- Placeholder Box ---------- */
+
+.placeholder-box {
+    min-height: 180px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    background: #f8fafc;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 15px;
+    margin-bottom: 20px;
+
+    overflow: hidden;
+}
+
+/* ---------- Images ---------- */
+
+.placeholder-box img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+}
+
+/* ---------- Paragraphs inside Placeholder ---------- */
+
+.placeholder-box p {
+    margin: 6px 0;
+    color: #374151;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* ---------- Description ---------- */
+
+.report-card > p {
+    color: #6b7280;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+
+    .reports-title {
+        font-size: 28px;
+    }
+
+    .reports-subtitle {
+        font-size: 15px;
+    }
+
+    .reports-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .placeholder-box {
+        min-height: 150px;
+    }
+
+    .placeholder-box img {
+        max-height: 250px;
+    }
+}
+
+/* ---------- Report Header with Status Dot ---------- */
+
+.report-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.report-header h2 {
+    margin-bottom: 0;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.dot-active {
+    background: #16a34a;
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+}
+
+.dot-inactive {
+    background: #cbd5e1;
+}
+
+/* ---------- Icon Color Variants ---------- */
+
+.icon-blue {
+    background: #2563eb;
+}
+
+.icon-purple {
+    background: #7c3aed;
+}
+
+.icon-teal {
+    background: #0d9488;
+}
+
+/* ---------- Metric Grid (Classification Report) ---------- */
+
+.metric-grid {
+    width: 100%;
+}
+
+.metric-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4px;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.metric-row:last-child {
+    border-bottom: none;
+}
+
+.metric-row span {
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.metric-row strong {
+    color: #1f2937;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* ---------- Not Applicable Text ---------- */
+
+.not-applicable {
+    color: #9ca3af;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* ---------- Uniform Card Height ---------- */
+
+.report-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+}
+
+.placeholder-box {
+    flex: 1;
+}

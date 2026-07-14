@@ -1,0 +1,76 @@
+# ==========================
+# Python
+# ==========================
+
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ==========================
+# Environment Files
+# ==========================
+
+.env
+
+# ==========================
+# ML Generated Files
+# ==========================
+
+models/*
+!models/.gitkeep
+
+uploads/*
+!uploads/.gitkeep
+
+graphs/*
+!graphs/.gitkeep
+
+reports/*
+!reports/.gitkeep
+
+catboost_info/
+
+# ==========================
+# Node
+# ==========================
+
+node_modules/
+npm-debug.log*
+
+# ==========================
+# VS Code
+# ==========================
+
+.vscode/
+
+# ==========================
+# OS Files
+# ==========================
+
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Logs
+# ==========================
+
+*.log
+
+# ==========================
+# Build
+# ==========================
+
+dist/
+build/
+
+# ==========================
+# Testing Files
+# ==========================
+
+data.csv
+train_data.csv
+batch_data.csv
+house_prediction_data.csv
+test.py
