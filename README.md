@@ -1,6 +1,6 @@
 # 🚀 AutoML Platform
 
-An End-to-End **AutoML Platform** built using **FastAPI** and **React.js** that automates the complete Machine Learning workflow. Users can upload datasets, analyze data, preprocess features, train multiple machine learning models, compare their performance, generate reports, and make predictions through an intuitive web interface.
+An End-to-End **AutoML Platform** built using **FastAPI** that automates the complete Machine Learning workflow. Users can upload datasets, analyze data, preprocess features, train multiple machine learning models, compare their performance, generate reports, and make predictions through an intuitive web interface.
 
 The platform supports both **Classification** and **Regression** problems with automatic model selection, hyperparameter tuning, and performance evaluation.
 
@@ -126,37 +126,41 @@ The platform is suitable for beginners, students, and professionals who want to 
 
 ## Dashboard
 
-_Add Dashboard Screenshot Here_
+<img width="1919" height="884" alt="image" src="https://github.com/user-attachments/assets/34a6e856-5198-46d9-ad4d-c01d0afaa30b" />
+
 
 ---
 
 ## Dataset Upload
 
-_Add Upload Screenshot Here_
+<img width="1919" height="936" alt="image" src="https://github.com/user-attachments/assets/88e7cde2-5966-4341-9427-19a4ec69a542" />
 
 ---
 
 ## Dataset Analysis
 
-_Add Dataset Analysis Screenshot Here_
+<img width="1919" height="940" alt="image" src="https://github.com/user-attachments/assets/010e61d6-77b8-4198-92a1-e6b7695061e9" />
+
 
 ---
 
 ## Model Training
+<img width="1919" height="938" alt="image" src="https://github.com/user-attachments/assets/be2a327d-3db0-4d81-995f-5c9862299f39" />
 
-_Add Training Screenshot Here_
+<img width="1919" height="926" alt="image" src="https://github.com/user-attachments/assets/7660bd4b-4837-4397-a41b-7569c952659c" />
 
 ---
 
 ## Results Dashboard
 
-_Add Results Screenshot Here_
+
+<img width="1916" height="933" alt="image" src="https://github.com/user-attachments/assets/cc248141-cab4-47f0-a317-57036ccea0d4" />
 
 ---
 
 ## Prediction
+<img width="1919" height="936" alt="image" src="https://github.com/user-attachments/assets/1e858738-d767-49c0-b52e-734efddf117d" />
 
-_Add Prediction Screenshot Here_
 
 ---
 
