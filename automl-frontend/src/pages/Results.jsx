@@ -39,12 +39,12 @@ const Results = () => {
         confusionRes,
         rocRes,
       ] = await Promise.all([
-        axios.get("http://127.0.0.1:8000/model-info"),
-        axios.get("http://127.0.0.1:8000/model-results"),
-        axios.get("http://127.0.0.1:8000/classification-report"),
-        axios.get("http://127.0.0.1:8000/feature-importance"),
-        axios.get("http://127.0.0.1:8000/confusion-matrix-graph"),
-        axios.get("http://127.0.0.1:8000/roc-curve-graph"),
+        axios.get(`${import.meta.env.VITE_API_URL}/model-info`),
+        axios.get(`${import.meta.env.VITE_API_URL}/model-results`),
+        axios.get(`${import.meta.env.VITE_API_URL}/classification-report`),
+        axios.get(`${import.meta.env.VITE_API_URL}/feature-importance`),
+        axios.get(`${import.meta.env.VITE_API_URL}/confusion-matrix-graph`),
+        axios.get(`${import.meta.env.VITE_API_URL}/roc-curve-graph`),
       ]);
 
       setModelInfo(modelInfoRes.data);

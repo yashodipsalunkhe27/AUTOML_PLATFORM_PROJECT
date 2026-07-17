@@ -15,7 +15,7 @@ function Settings() {
 
   // API URL State
   const [apiUrl, setApiUrl] = useState(
-    localStorage.getItem("apiUrl") || "http://127.0.0.1:8000"
+    localStorage.getItem("apiUrl") || import.meta.env.VITE_API_URL
   );
 
   // Loading State
