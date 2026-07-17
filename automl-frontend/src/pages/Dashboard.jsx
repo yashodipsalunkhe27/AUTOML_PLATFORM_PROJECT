@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Layout from "../layout/Layout";
-import "../styles/Dashboard.css";
+import "../styles/dashboard.css";
 import api from "../api/api.js";
 import ModelComparisonChart from "../components/ModelComparisonChart";
 import DatasetQualityChart from "../components/DatasetQualityChart";
